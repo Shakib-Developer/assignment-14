@@ -1,5 +1,4 @@
 import { CreateToken } from "@/app/utility/JWTHelper";
-import { cookies } from "next/headers";
 
 export async function TokenCookie(email) {
   let token = await CreateToken(email);
